@@ -1,0 +1,90 @@
+.instructions {
+  color: #ffffff;
+  font-family: "AvenirRegular";
+}
+
+.requestContainer {
+  background: #42b6e9;
+  width: 100%;
+}
+
+.formContainer {
+  background: #ffffff;
+  padding: 24px;
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.instructionsContainer {
+}
+
+.tabContents {
+  margin-top: 24px;
+  padding: 12px;
+}
+
+.instrPrompt {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.instrHeader {
+  font-size: 48px;
+  color: #ffffff;
+  font-family: "AvenirRegular";
+}
+
+.imageContainer {
+  padding-right: 50px;
+}
+
+.imageContainer2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.instructionsContainer {
+  display: inline;
+  width: 400px;
+}
+
+.outerContainer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructionsTitle {
+  font-family: "SourceSansProBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 121%;
+}
+
+.instructionsDescription {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.instructionsTelephone {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.instructionsEmail {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}

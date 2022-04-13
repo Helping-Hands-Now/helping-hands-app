@@ -1,0 +1,55 @@
+.contentLink {
+  font-family: "AvenirBold";
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contactContainer {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.headPage {
+  font-family: "AvenirRegular";
+}
+
+.headPage {
+  font-size: 48px;
+}
+
+.headDesc {
+  font-size: 36px;
+}
+
+.headDesc {
+  margin-top: 36px;
+  font-family: "AvenirRegular";
+}
+
+.contentFAQ {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-family: "AvenirBold";
+  font-size: 20px;
+}
+
+.contentDesc {
+  font-family: "AvenirRegular";
+  font-size: 20px;
+}
+
+.contentDesc .contactNumber {
+  font-weight: bolder;
+}
+
+.contentContainer {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contactButtonsIcons {
+  font-size: 48px;
+  text-align: center;
+}

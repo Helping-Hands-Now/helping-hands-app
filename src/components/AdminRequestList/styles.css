@@ -1,0 +1,8 @@
+.adminRequestList {
+  height: 90vh;
+  overflow-x: scroll;
+}
+
+.requestListContainer {
+  height: 100vh;
+}

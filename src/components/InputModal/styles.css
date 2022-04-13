@@ -1,0 +1,19 @@
+.inputText {
+  font-size: 18px;
+  font-family: "AvenirBold";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal {
+  width: 300px;
+}
+
+.inputModalActions {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}

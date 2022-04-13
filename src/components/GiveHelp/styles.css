@@ -1,0 +1,46 @@
+.instructions {
+  color: #ffffff;
+  font-family: "AvenirRegular";
+}
+
+.giveContainer {
+  background: #8b78b4;
+  width: 100%;
+}
+
+.formContainer {
+  background: #ffffff;
+  padding: 24px;
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.instructionsContainer {
+  margin: 24px;
+}
+
+.instrPrompt {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.instrHeader {
+  font-size: 48px;
+  color: #ffffff;
+  font-family: "AvenirRegular";
+}
+
+.instructionsContainer {
+  margin: 12px;
+}
+
+.instr {
+  font-family: "AvenirRegular";
+  padding: 6px;
+}
+
+.instrSmallHeader {
+  font-size: 36px;
+  color: #8b78b4;
+  font-family: "AvenirRegular";
+}

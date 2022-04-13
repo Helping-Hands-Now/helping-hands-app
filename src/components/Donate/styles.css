@@ -1,0 +1,58 @@
+.headPage {
+  font-family: "AvenirRegular";
+}
+
+.headPage {
+  font-size: 48px;
+  text-align: center;
+}
+
+.headDesc {
+  font-size: 36px;
+}
+
+.headDesc {
+  margin-top: 36px;
+  font-family: "AvenirRegular";
+}
+
+.contentFAQ {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-family: "AvenirBold";
+  font-size: 20px;
+}
+
+.contentDesc {
+  font-family: "AvenirRegular";
+  font-size: 20px;
+}
+
+.contentDescItalic {
+  font-family: "AvenirRegular";
+  font-size: 18;
+  font-style: italic;
+}
+
+.contentContainer {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.donateAmountButtonContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button.amountButton {
+  border: 1px solid !important;
+}
+
+.amountButton {
+  height: 80px;
+  width: 200px;
+}

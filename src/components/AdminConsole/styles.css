@@ -1,0 +1,7 @@
+.header {
+  padding-top: 2rem;
+}
+
+.message .header {
+  padding-top: 0;
+}

@@ -1,0 +1,15 @@
+{
+  "acceptance-text": "[Note: this string is no longer needed because we have removed the acceptance text flow.]\n[Helping Hands] {{volunteerName}} has offered to help! Go to the website to view more details about them and accept the message.",
+  "cancellation-text-requester": "[Helping Hands] Unfortunately, {{helperFirstName}} has marked that they are unable to fulfill your request. Don't worry - your request has been made public again, so that another volunteer can assist you.",
+  "pairing-text-requester": "[Helping Hands] {{helperName}} has volunteered to help you with your request! They'll contact you by phone to coordinate the details with you. If you don't hear from them in a few hours, you can contact them at {{helperPhone}}.",
+  "pairing-text-volunteer": "[Helping Hands] Thanks for volunteering to help {{requesterName}}! Please contact them as soon as possible at {{requesterPhone}} to introduce yourself and coordinate how you can help. You should also ask them for their address so that you know where to deliver.",
+  "thanks-helper": "[Helping Hands] {{requesterFirstName}} wanted to send you a personal thank-you note! Here's what they said: \"{{requesterThanks}}\"",
+  "expire-text-requester": "[Helping Hands] It's been a while since {{helperFirstName}} accepted your request. We want to double-check with you: has your request been completed? Please respond with Yes or No. If we don't hear from you soon, we will assume that your request was completed successfully.",
+  "close-text-requester": "[Helping Hands] {{helperFirstName}} has marked that they have completed your request. We want to double-check with you: has your request been completed? Please respond with Yes or No. If we don't hear from you soon, we will assume that your request was completed successfully.",
+  "close-text-helper": "[Helping Hands] {{requesterFirstName}} has marked that you completed their request. Thank you for your help!",
+  "text-mistake": "[Helping Hands] Sorry, we couldn't recognize that input. Please try entering Yes or No again.",
+  "close-conformation-yes": "[Helping Hands] Thank you. We have marked that your request has been completed. Feel free to go back onto https://helpinghands.community to make another request!",
+  "close-conformation-no": "[Helping Hands] Sorry to hear that. We have made your request public again, so that another volunteer may assist you.",
+  "expire-request-helper": "[Helping Hands] Thank you for helping {{requesterFirstName}}! We have marked their request as completed. If you'd like to keep helping, feel free to log back onto https://helpinghands.community.",
+  "expire-request-requester": "[Helping Hands] Since we haven't heard from you for a few hours, we'll assume that {{helperFirstName}} was able to help you. We're now marking this request as completed. If this is a mistake, please re-submit the request on https://helpinghands.community."
+}

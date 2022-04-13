@@ -1,0 +1,80 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function notEditingRestrictedUserFields() {
+      return (resource.data.numCancellationsMadeToday == request.resource.data.numCancellationsMadeToday)
+        && (resource.data.phoneNumber == request.resource.data.phoneNumber)
+        && (resource.data.createdBy == request.resource.data.createdBy)
+
+        // && (resource.data.isBanned == request.resource.data.isBanned)
+        // && (resource.data.canHelp == request.resource.data.isModerator)
+        // && (resource.data.canHelp == request.resource.data.canHelp)
+        // && (resource.data.needsHelp == request.resource.data.needsHelp)
+    }
+
+    function isAdmin() {
+      return request.auth.token.admin;
+    }
+
+    match /users/{uid} {
+      allow update: if (request.auth.uid == uid && notEditingRestrictedUserFields()) || isAdmin();
+      allow read, delete: if request.auth.uid == uid || isAdmin() || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.enterpriseConsoleAccess == true;
+      allow create: if request.auth.uid != null;
+    }
+
+    function notEditingPermanentRequestFields() {
+      return (resource.data.createdBy == request.resource.data.createdBy)
+        && (resource.data.geohash == request.resource.data.geohash)
+        && (resource.data.languages == request.resource.data.languages)
+        && (resource.data.requester == request.resource.data.requester)
+        && (resource.data.requesterFirstName == request.resource.data.requesterFirstName)
+        && (resource.data.timeCreated == request.resource.data.timeCreated)
+        && (resource.data.zipCode == request.resource.data.zipCode)
+        && (resource.data.toBeFulfilledBy == request.resource.data.toBeFulfilledBy)
+    }
+
+    function isRequestOwner() {
+      return request.auth.uid == resource.data.requester
+        || request.auth.uid == resource.data.createdBy
+    }
+
+    function updatingStatusCorrectly() {
+      return (resource.data.status == request.resource.data.status
+        || resource.data.status == 'open' && request.resource.data.status == 'pending_fulfillment')
+        || (resource.data.status == 'pending_fulfillment' && request.resource.data.status == 'closed');
+    }
+
+    match /requests/{requestId} {
+      allow read: if true;
+      allow list: if true;
+      allow update: if isRequestOwner() && updatingStatusCorrectly() && notEditingPermanentRequestFields();
+      allow delete: if isRequestOwner() || isAdmin();
+    }
+
+    match /community_events/{eventID} {
+      allow read: if true;
+      allow list: if true;
+      allow write: if false;
+    }
+
+    match /community_events/{eventID}/volunteers/{volunteerID} {
+      allow read: if true;
+      allow list: if true;
+      allow write: if false;
+    }
+
+    match /suppliers/{supplierID} {
+      allow read: if true;
+    }
+
+    match /requests/{requestId}/admin/metaData {
+    	allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+    
+     match /user_organizations/{userOrgID} {
+      allow read: if true;
+    }
+  }
+}

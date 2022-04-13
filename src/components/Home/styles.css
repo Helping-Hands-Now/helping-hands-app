@@ -1,0 +1,378 @@
+.homePageContainer {
+  padding-top: 80px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.testimonialCard {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonialImages {
+  width: 150px;
+}
+
+.impactImage {
+  width: 100%;
+}
+
+.quoteBox {
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.testimonialQuote {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.testimonialName {
+  font-family: "AvenirBold";
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+
+.testimonialPosition {
+  font-family: "AvenirRegular";
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.testimonialCompany {
+  font-family: "AvenirRegular";
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.testimonialsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.recapContainer {
+  display: block;
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.preHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.frontPageHeader {
+  font-size: 40px;
+  font-family: "AvenirRegular";
+  align-self: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+}
+
+.CTAsubHeaderBox {
+  height: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCallToAction {
+  padding: 20px;
+}
+
+.callToActionColumn {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svgWrapper {
+  height: 10px;
+  width: 10px;
+}
+
+.horizontalRule {
+  height: 0px;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 2px solid #dadada;
+}
+
+.contentSection {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frontPageSection {
+  padding: 0 91px;
+}
+
+.frontPageSectionHeader {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-family: "AvenirBold";
+  text-align: center;
+}
+
+.frontPageSectionHeader.pressSectionHeader {
+  margin-bottom: 28px;
+}
+
+.frontPageText {
+  margin-bottom: 32px;
+  padding: 0 71px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "AvenirRegular";
+}
+
+.frontPageText.subText {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.HowWeWorkStepContainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HowWeWorkStep {
+  color: #9377b6;
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  font-weight: 600;
+}
+
+.frontPageText.centered {
+  text-align: center;
+}
+
+.frontPageTextChoose {
+  font-size: 16px;
+  font-family: "AvenirRegular";
+  font-weight: 590;
+  text-align: center;
+  color: #434343;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.CTAspacer {
+  height: 100px;
+}
+
+.howItWorksSection {
+  padding: 0 40px;
+}
+
+.frontPageSubSectionHeaderRequestHelp {
+  font-size: 40px;
+  font-family: "AvenirBold";
+  text-align: center;
+  color: #42b6e9;
+}
+
+.frontPageSubSectionHeaderGiveHelp {
+  font-size: 40px;
+  font-family: "AvenirBold";
+  text-align: center;
+  color: #9377b6;
+}
+
+.inThePressSection {
+  padding: 0 184px;
+}
+
+.pressStories {
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+.pressStories .pressStory {
+  min-height: 50px;
+
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 166px 1fr;
+  align-items: center;
+}
+
+.pressStories .pressStory .pressStoryHeadline {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 3%;
+}
+
+.pressStories .pressStory .pressStoryImage {
+  max-width: 100%;
+  max-height: 50px;
+  justify-self: center;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 166px);
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  padding: 0 32px;
+
+  justify-content: center;
+}
+
+.partners .partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 110px;
+}
+
+.partners.square {
+  grid-template-columns: repeat(auto-fit, 75px);
+}
+
+.partners.square .partner {
+  width: 75px;
+  max-height: 55px;
+}
+
+.partnerImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imageDirections {
+  text-align: center;
+}
+
+.primaryColor {
+  color: #42b6e9;
+}
+
+.secondaryColor {
+  color: #9377b6 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .frontPageTextChoose {
+    font-size: 16px;
+    font-family: "AvenirRegular";
+    font-weight: 600;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .inThePressSection {
+    padding: 0 40px;
+  }
+
+  .partners {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .recapContainer {
+    display: block;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .contentSection {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frontPageHeader {
+    font-size: 28px;
+    font-family: "AvenirRegular";
+    align-self: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+  }
+
+  .frontPageSection {
+    padding: 0 20px;
+  }
+
+  .frontPageText {
+    padding: 0;
+  }
+
+  .inThePressSection {
+    padding: 0 20px;
+  }
+
+  .pressStories {
+    grid-row-gap: 18px;
+  }
+
+  .pressStories .pressStory {
+    grid-template-columns: 83px 1fr;
+    grid-column-gap: 25px;
+    min-height: 25px;
+  }
+
+  .pressStories .pressStory .pressStoryHeadline {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .pressStories .pressStory .pressStoryImage {
+    max-height: 25px;
+  }
+
+  .partners {
+    grid-template-columns: repeat(auto-fit, 125px);
+  }
+
+  .partners .partner {
+    width: 125px;
+    height: 83px;
+  }
+
+  .partners.square {
+    grid-template-columns: repeat(4, 60px);
+  }
+
+  .partners.square .partner {
+    width: 60px;
+    max-height: 44px;
+  }
+}

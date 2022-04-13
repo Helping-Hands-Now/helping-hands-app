@@ -1,0 +1,53 @@
+.successModalTitle {
+  padding-top: 10px;
+  font-size: 20;
+  font-family: "AvenirBold";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.successText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.successTextBlue {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  text-align: center;
+  word-wrap: break-word;
+  color: #42b6e9;
+}
+
+.modal {
+  width: 1000px;
+}
+
+.successModalActions {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonGrid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalButton {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}

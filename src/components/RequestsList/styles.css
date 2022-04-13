@@ -1,0 +1,125 @@
+.individualRequestTitle {
+  font-size: 14px;
+  font-family: "AvenirBold";
+  color: #8b78b2;
+}
+
+.individualRequestTime {
+  font-size: 14px;
+  font-family: "AvenirRegular";
+  color: #646464;
+}
+
+.IndividualRequestName {
+  font-family: "AvenirBold";
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.individualRequestHeaderLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.milesAwayText {
+  color: #646464;
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+
+.requestInfo {
+  display: inline;
+  padding: 6px;
+  margin: 6px;
+  font-family: "AvenirRegular";
+  font-size: 14px;
+}
+
+.requestBio {
+  display: inline;
+  margin-top: -10px;
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.requestContent {
+  margin: 18px;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 24px;
+  background-color: white;
+}
+
+.dataContainer {
+  margin: 6px;
+}
+
+.pendingActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  font-size: 36px;
+  font-family: "AvenirBold";
+}
+
+.modalText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+
+.requestInfoNeeds {
+  padding: 6px;
+  margin: 6px;
+  font-family: "AvenirRegular";
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.helperRunsButton {
+  width: 240px;
+}
+
+.requestAccordionTitle {
+  font-size: 18px;
+  font-family: "AvenirBold";
+  color: #0081de;
+}
+
+.requestAccordionText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  color: #575757;
+}
+
+.languageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.languageIcon {
+  color: #646464;
+  font-size: 18px;
+}
+
+.languagesText {
+  font-family: "AvenirRegular";
+  font-size: 16px;
+  margin-top: 7px;
+  color: #646464;
+}
+
+@media only screen and (max-width: 700px) {
+  .requestContent {
+    margin: 0px !important;
+    margin: -5px !important;
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+}

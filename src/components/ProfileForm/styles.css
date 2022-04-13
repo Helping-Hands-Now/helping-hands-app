@@ -1,0 +1,33 @@
+.profileFormGrid {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.profileButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkboxCriteria {
+  font-family: AvenirRegular;
+  font-size: 15px;
+  color: #575e7a;
+  margin-bottom: 5px;
+}
+
+.profileButtonContainerProfilePage {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.TOSText {
+  display: inline;
+  font-size: 14px;
+  vertical-align: middle;
+  font-family: "AvenirRegular";
+}
+
+.TOSTitle {
+  font-family: "AvenirRegular";
+}

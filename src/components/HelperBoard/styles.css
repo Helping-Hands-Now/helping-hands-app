@@ -1,0 +1,149 @@
+.divTabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.myEventsDescriptionHeader {
+  color: black;
+  font-size: 26px;
+  font-family: "AvenirBold";
+}
+
+.communityRequestDescriptionHeader {
+  color: #00ba34;
+  font-size: 26px;
+  font-family: "AvenirBold";
+}
+
+.individualRequestDescriptionHeader {
+  color: #8b78b2;
+  font-size: 26px;
+  font-family: "AvenirBold";
+}
+
+.requestDescription {
+  color: #646464;
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+
+.individualListDescription {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.communityListDescription {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.addressBox {
+  background-color: #ffffff;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.boardTitle {
+  font-family: "AvenirBold";
+  font-size: 24px;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.boardInfo {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+  display: inline;
+}
+
+.distanceSelect {
+  font-size: 14px;
+}
+
+.boardOption {
+  margin-right: 24px;
+}
+
+.boardOptions {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoPrompt {
+  font-family: "AvenirRegular";
+  padding-top: 24px;
+  margin-left: 12px;
+}
+
+.helpedDisplay {
+  min-width: 400px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.tabContainer {
+  padding: 24px;
+  background: #f6f7ff;
+  min-height: 400px;
+}
+
+.myEventsDescription {
+  padding-top: 30px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.individualRequestsContainer {
+  padding: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  background: #fbfbfb;
+}
+
+.completedRequestsContainer {
+  padding: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  background: #eefaff;
+  min-height: 400px;
+}
+
+.externalLink {
+  color: #0081de;
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+.color-white {
+  background-color: white !important;
+}
+@media only screen and (max-width: 700px) {
+  .individualRequestsContainer {
+    padding: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #fbfbfb;
+  }
+
+  .completedRequestsContainer {
+    padding: 24px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #eefaff;
+  }
+  .color-white {
+    background-color: white !important;
+  }
+}

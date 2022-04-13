@@ -1,0 +1,38 @@
+.requestEntry {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.requestInfo {
+  display: inline;
+  padding: 6px;
+  margin: 6px;
+  font-family: "AvenirRegular";
+  font-size: 14px;
+}
+
+.requestInfoNeeds {
+  padding: 6px;
+  margin: 6px;
+  font-family: "AvenirRegular";
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.requestContent {
+  margin: 18px;
+}
+
+.dataContainer {
+  margin: 6px;
+}
+
+.requestAction {
+  float: right;
+  color: red;
+  font-size: 14px;
+}
+
+.thanksInstr {
+  margin-bottom: -24px;
+}

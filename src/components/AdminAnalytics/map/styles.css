@@ -1,0 +1,45 @@
+.showVolunteersCheckBox {
+  background-color: #66c2a5;
+  padding: 10px;
+}
+
+.showRequestersCheckBox {
+  background-color: #3288bd;
+  padding: 10px;
+}
+
+.showRequestsCheckBox {
+  background-color: #d53e4f;
+  padding: 10px;
+}
+
+.table-map {
+  border: none !important;
+}
+
+.active-buttons {
+  color: #9377b6 !important;
+  background: white !important;
+  border: 1px solid #9377b6 !important;
+}
+.inactive-button {
+  color: white !important;
+  background-color: #9377b6 !important;
+}
+.bt-group {
+  border-color: #9377b6 !important;
+}
+.grid-elements-buttons {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-gap: 170px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-elements-buttons {
+    display: block;
+  }
+  .bck-all-none {
+    margin-bottom: 10px;
+  }
+}

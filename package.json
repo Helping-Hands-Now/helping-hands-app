@@ -1,0 +1,141 @@
+{
+  "name": "helpinghands",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "^5.15.5",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.3.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "camel-case": "^4.1.1",
+    "draft-js": "^0.11.7",
+    "email-addresses": "^3.1.0",
+    "email-validator": "^2.0.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "firebase": "^8.2.2",
+    "firebase-admin": "^9.4.2",
+    "firebase-tools": "^9.1.2",
+    "geohash-distance": "^1.0.2",
+    "geolib": "^3.3.1",
+    "http2": "^3.3.7",
+    "i18next": "^19.3.3",
+    "i18next-browser-languagedetector": "^4.0.2",
+    "i18next-locize-backend": "^3.0.3",
+    "i18next-xhr-backend": "^3.2.2",
+    "libphonenumber-js": "^1.7.51",
+    "match-sorter": "^4.0.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.31",
+    "ngeohash": "^0.6.3",
+    "node-pre-gyp": "^0.14.0",
+    "object-hash": "^2.0.3",
+    "react": "^16.13.1",
+    "react-confirm-alert": "^2.6.1",
+    "react-csv": "^2.0.3",
+    "react-csv-reader": "^3.0.5",
+    "react-datepicker": "^2.14.1",
+    "react-dom": "^16.13.1",
+    "react-firebaseui": "^4.2.0",
+    "react-ga": "^2.7.0",
+    "react-i18next": "^11.3.4",
+    "react-json-view": "^1.19.1",
+    "react-map-gl": "^5.2.3",
+    "react-map-gl-geocoder": "^2.1.3",
+    "react-moment": "^0.9.7",
+    "react-responsive": "^8.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.3",
+    "react-share": "^4.1.0",
+    "react-svg": "^11.0.20",
+    "react-table": "^7.0.0",
+    "react-test-renderer": "^16.13.1",
+    "recharts": "^1.8.5",
+    "request": "^2.88.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "stackdriver-errors-js": "^0.8.0",
+    "stripe": "^8.39.1",
+    "styled-components": "^5.0.1",
+    "twilio": "^3.41.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts --max_old_space_size=4096 start",
+    "build": "node ./src/sitemap-update.js && export NODE_OPTIONS=\"--max-old-space-size=8192\" && react-scripts build",
+    "test": "react-scripts test --verbose",
+    "test-all": "react-scripts test --watchAll",
+    "test-coverage": "react-scripts test --watchAll --coverage",
+    "test-precommit": "react-scripts test --verbose --watchAll=false",
+    "eject": "react-scripts eject",
+    "deploy": "./deploy.sh",
+    "logs-dev": "firebase use helping-hands-development && firebase functions:config:get > ./functions/.runtimeconfig.json && yarn --cwd ./functions --ignore-engines run logs",
+    "serve-dev": "firebase use helping-hands-development && firebase functions:config:get > ./functions/.runtimeconfig.json && export GOOGLE_APPLICATION_CREDENTIALS=\"$(pwd)/helping-hands-development-key.json\" && yarn --cwd ./functions --ignore-engines run serve",
+    "use-dev": "firebase use helping-hands-development && firebase functions:config:get > ./functions/.runtimeconfig.json && echo \"module.exports = { 'build_target': 'helping-hands-development' };\" > ./src/config/env.js && export GOOGLE_APPLICATION_CREDENTIALS=\"$(pwd)/helping-hands-development-key.json\" && npm run update-commit",
+    "deploy-dev": "./deploy.sh dev",
+    "serve-prod": "read -p \"Are you sure you want to serve Production (Yes/No)? \" response && if [ \"$response\" = \"Yes\" ]; then echo Ok! Some non-emulated features may not work correctly.; else echo Aborting! Thanks for being safe. && false; fi && firebase use helping-hands-community && firebase functions:config:get > ./functions/.runtimeconfig.json && unset GOOGLE_APPLICATION_CREDENTIALS && yarn --cwd ./functions --ignore-engines run serve",
+    "use-prod": "read -p \"Are you sure you want to use Production (Yes/No)? \" response && if [ \"$response\" = \"Yes\" ]; then echo Ok! Loading production project. Please be careful.; else echo Aborting! Thanks for being safe. && false; fi && firebase use helping-hands-community && firebase functions:config:get > ./functions/.runtimeconfig.json && echo \"module.exports = { 'build_target': 'helping-hands-community' };\" > ./src/config/env.js && unset GOOGLE_APPLICATION_CREDENTIALS && npm run update-commit",
+    "deploy-prod": "./deploy.sh prod",
+    "update-commit": "echo \"module.exports = { 'commit': '$(git rev-parse HEAD)', };\" > ./src/config/version.js",
+    "update-members": "node ./scripts/parseHelpingHandMembers/index.js",
+    "translation": "cd public/locales && locize sync --api-key $LOCIZE_API_KEY --project-id $LOCIZE_PROJECT_ID",
+    "lint": "NODE_OPTIONS=--max_old_space_size=4096 prettier --config .prettierrc --write .",
+    "lint-github-action": "prettier --config .prettierrc . --check"
+  },
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "csvtojson": "^2.0.10",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "locize-cli": "^7.0.3",
+    "locize-editor": "^3.0.0",
+    "prettier": "^2.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "yarn update-commit",
+      "post-rewrite": "yarn update-commit",
+      "post-merge": "yarn update-commit",
+      "post-checkout": "yarn update-commit"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}",
+      "src/hooks/*.{js,jsx}",
+      "src/utils/*.{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "lint-staged": {
+    "*": "prettier --config .prettierrc --write"
+  }
+}

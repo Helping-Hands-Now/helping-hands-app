@@ -1,0 +1,118 @@
+.card-header-partner {
+  padding: 20px;
+  margin-top: -58px !important;
+}
+.card-header-partner-bottom {
+  width: 150px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.card-partner {
+  box-shadow: 2px 3px 3px 0 #eaeaea, 0 0 0 1px #d4d4d5 !important;
+  width: 330px !important;
+}
+.card-deliveries {
+  min-height: 300px !important;
+}
+.card-logo-partner {
+  display: block !important;
+  margin: auto;
+}
+.opening-quote-box {
+  margin-bottom: -25px !important;
+}
+.closing-quote-box {
+  margin-top: -8px !important;
+  text-align: right;
+}
+.styled-quote {
+  font-size: 40px;
+  font-family: "Lexend Mega";
+  color: #42b6e9;
+}
+
+.box-logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.triptic {
+  width: 50px;
+}
+.logistic-partner {
+  text-align: center;
+  color: black !important;
+  margin-top: -5px !important;
+  margin-bottom: 25px;
+}
+.logistic-partner::after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 3px;
+  top: 75px;
+  left: 39%;
+  background-color: #9377b6;
+}
+.bold {
+  font-weight: 800 !important;
+  color: black;
+}
+.li-box {
+  text-align: initial;
+}
+.card-partner-description {
+  font-size: 18px;
+}
+.HowWeWorkStepContainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subText {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.HowWeWorkStep {
+  color: #9377b6;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+.row-partners {
+  text-align: center;
+}
+.contact-us {
+  margin-top: 30px;
+}
+.partners-content {
+  padding: 0px 20px 10px !important;
+}
+.partners {
+  min-height: 420px !important;
+}
+@media only screen and (max-width: 850px) {
+  .contentContainer {
+    padding: 0 100px !important;
+  }
+  .card-deliveries {
+    min-height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row-partners-column {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .card-deliveries {
+    margin-bottom: 20px !important;
+  }
+
+  .contentContainer {
+    padding: 0 20px !important;
+  }
+}

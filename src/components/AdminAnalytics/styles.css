@@ -1,0 +1,12 @@
+.Marker {
+  height: 8px;
+  width: 8px;
+}
+
+.VolunteerMarker {
+  background-color: blue;
+}
+
+.RequesterMarker {
+  background-color: red;
+}

@@ -1,0 +1,200 @@
+.snippetContainer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.whiteLink {
+  color: white;
+  text-decoration: underline;
+}
+
+.emailSubtext {
+  color: #b39ae7 !important;
+  font-family: "AvenirRegular";
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.startContainers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.loadingBar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  background-color: #7a56c2;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barText {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.bgcContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  background-color: #e5e5e5;
+}
+
+.bgcContainerExisting {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  background-color: #3c2569;
+}
+
+.testimonialContainer {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.checkrStatusLabel {
+  width: 100%;
+  font-size: 30px;
+}
+
+.requestsInAreaContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  background-color: #3f3d56;
+}
+
+.requestsInAreaContainerText {
+  font-family: "AvenirRegular";
+  font-style: "italic";
+  font-size: 1.8rem;
+  margin-right: 2rem;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.stageText {
+  font-family: "AvenirBold";
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  color: #3f3d56;
+}
+
+.snippetName {
+  font-family: "AvenirBold";
+  font-size: 4rem;
+  margin-right: 2rem;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.bgcHeader {
+  font-family: "AvenirRegular";
+  font-size: 3rem;
+  margin-right: 2rem;
+  color: #3f3d56;
+  display: inline-block;
+}
+
+.bgcHeaderExisting {
+  font-family: "AvenirBold";
+  font-size: 1.8rem;
+  color: #d8c5ff;
+  display: inline-block;
+}
+
+.testimonialHeader {
+  font-family: "AvenirRegular";
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #3f3d56;
+  display: inline-block;
+}
+
+.bgcSubtitle {
+  font-family: "AvenirRegular";
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  margin-top: 0rem;
+  color: #3f3d56;
+  display: inline-block;
+}
+
+.bgcSubtitleExisting {
+  font-family: "AvenirRegular";
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  margin-top: 0rem;
+  color: white;
+  display: inline-block;
+}
+
+.nameDisplay {
+  display: flex;
+  align-items: center;
+}
+
+.snippetInfo {
+  font-family: "AvenirBold";
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .snippetContainer {
+    background-color: #42b6e9;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .snippetName {
+    font-family: "AvenirBold";
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: #ffffff;
+    display: inline-block;
+  }
+  .snippetInfo {
+    font-family: "AvenirBold";
+    font-size: 1.2rem;
+    color: #0f5468;
+    display: inline-block;
+  }
+  .bgcContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #e5e5e5;
+  }
+  .requestsInAreaContainer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #3f3d56;
+  }
+  .bgcContainerExisting {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #3c2569;
+  }
+}

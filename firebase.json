@@ -1,0 +1,73 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/r/survey/tm",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=tm&utm_medium=email",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/mc",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=mc&utm_medium=email",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/fb",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=fb&utm_medium=social",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/li",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=li&utm_medium=social",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/md",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=md&utm_medium=social",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/tw",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=tw&utm_medium=social",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/hhc",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=hhc&utm_medium=organic",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/fbnem",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=fbnem&utm_medium=paid",
+        "type": 301
+      },
+      {
+        "source": "/r/survey/fbnweb",
+        "destination": "https://ak9td33gazz.typeform.com/to/OJ5fMnTu?utm_source=fbnweb&utm_medium=paid",
+        "type": 301
+      }
+    ]
+  },
+  "emulators": {
+    "functions": {
+      "host": "localhost",
+      "port": 5002
+    }
+  },
+  "functions": {
+    "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint"],
+    "source": "functions"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

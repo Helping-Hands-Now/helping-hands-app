@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "helping-hands-community",
+    "dev": "helping-hands-development",
+    "prod": "helping-hands-community"
+  }
+}

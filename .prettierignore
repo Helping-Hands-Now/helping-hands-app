@@ -1,0 +1,10 @@
+**/node_modules
+.*
+*.lock
+*.rules
+*.svg
+*.png
+*.xml
+
+# TODO: cleanup version.js
+src/config/version.js

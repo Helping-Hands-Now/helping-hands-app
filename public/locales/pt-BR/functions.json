@@ -1,0 +1,6 @@
+{
+  "acceptance-text": "[Nota: esta string não é mais precisa porque nós removemos do flow]\n[Mãos que Ajudam] {{volunteerName}} ofereceu a ajudar! Vá para o site para ver mais detalhes sobre eles e aceite a mensagem.",
+  "cancellation-text-requester": "[Helping Hands] Infelizmente, {{helperFirstName}} marcou que eles não conseguiram terminar o seu pedido. Não se preocupe - seu pedido foi feito publico de novo, para que outro voluntário possa ajudar.\n",
+  "pairing-text-requester": "[Helping Hands] {{helperName}} se voluntáriou para ajudar com o seu pedido! Eles vão entrar em contato por telefone para coordenar detalhes com você. Se você não escutar deles em algumas horas, entre em contato com eles pelo celular  {{helperPhone}}.",
+  "pairing-text-volunteer": "[Helping Hands] Obrigada se voluntariar para ajudar {{requesterName}}! Por favor entre em contact com eles o quanto mais rapido no {{requesterPhone}} para coordenar como pode ajuda-los.\n"
+}

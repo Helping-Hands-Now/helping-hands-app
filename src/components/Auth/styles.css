@@ -1,0 +1,13 @@
+.authTitle {
+  font-size: 36px;
+  font-family: "AvenirBold";
+}
+
+.authText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+
+.modal {
+  width: 300px;
+}

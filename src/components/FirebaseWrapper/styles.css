@@ -1,0 +1,270 @@
+html,
+body {
+  background-color: #f6f6f6;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.content-wrap {
+  padding-bottom: 10rem;
+  background-color: #ffffff;
+}
+
+.nameDropdown {
+  padding: 15px;
+  max-height: 10px;
+  border-radius: 2px !important;
+  border-color: red !important;
+  border-bottom: solid;
+  border-width: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.profileDropdownText {
+  font-family: "AvenirRegular";
+  font-size: 18px;
+}
+
+.nameDropdown:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.profileDropdown {
+  position: absolute;
+  padding: 10px;
+  padding-left: 12px;
+  padding-top: 25px;
+  background-color: white;
+  top: 90px;
+  right: 18px;
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.18);
+}
+
+.profileOption {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profileOptionLabel {
+  font-family: "AvenirBold";
+  font-size: 15px;
+  text-align: center;
+}
+
+.profileOptionLabel:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.logoutRed {
+  color: #e50000;
+}
+
+.ui.menu.navMenu {
+  margin: 0px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobileMenu {
+  min-height: 40px;
+}
+
+.menuItem {
+  padding-right: 18px;
+  padding-left: 18px;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  font-family: "AvenirRegular";
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.dropdown-content .menuItem:first-child {
+  border-radius: 15px 15px 5px 5px;
+}
+
+.dropdown-content .menuItem:last-child {
+  border-radius: 5px 5px 15px 15px;
+}
+
+.about:not(.activeMenu):hover {
+  color: #979797;
+}
+
+.menuItem:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.activeMenu {
+  color: #ffffff;
+}
+
+.help:not(.activeMenu):hover {
+  color: #9377b6;
+}
+
+.request:not(.activeMenu):hover {
+  color: #42b6e9;
+}
+
+.activeHelp {
+  background: #8b78b4;
+}
+
+.activeRequest {
+  background: #42b6e9;
+}
+
+.activeAbout {
+  background: #575e7a;
+}
+
+.menuLogo {
+  display: inline;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logoMenuItem {
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  font-family: "AvenirBold";
+  margin-right: 30px;
+  color: #000000;
+}
+
+.expandIcon {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 36px;
+  position: absolute;
+  right: 12px;
+  margin-top: -10px;
+  vertical-align: center;
+}
+
+.mobileLogo {
+  display: inline-block;
+}
+
+.mobileBar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.mobileLoginBtn {
+  display: inline-block;
+  padding: 0px;
+  margin: 0x;
+  position: absolute;
+  right: 60px;
+  margin-top: 5px;
+  vertical-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: -20px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.menuItem a:hover {
+  color: #ffffff;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.requestHelpDropDown {
+  background: #f9f9f9;
+  display: block;
+  position: absolute;
+  min-width: 325px;
+  min-height: 325px;
+  z-index: 1;
+  padding: 20px;
+}
+
+.requestHelpDropDownTitle {
+  font-family: "SourceSansProBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.requestHelpDropDownDescription {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.navBannerWrapper {
+  width: 100%;
+  padding: 18px 10%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #000000;
+}
+
+.navBannerWrapper .navBannerContent {
+  max-width: 900px;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  .navBannerWrapper .navBannerContent {
+    text-align: left;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "acceptance-text": "[Nota: esta cadena ya no es necesaria porque hemos eliminado el flujo de texto de aceptación.]\n[Manos amigas] {{voluntarioNombre}} se ha ofrecido a ayudar. Vaya al sitio web para ver más detalles sobre ellos y acepte el mensaje.",
+  "cancellation-text-requester": "[Helping Hands] Desafortunadamente, {{helperFirstName}} ha marcado que no pueden cumplir con su solicitud. No se preocupe: su solicitud se ha hecho pública nuevamente, para que otro asistente pueda ayudarlo.",
+  "pairing-text-requester": "[Helping Hands] {{helperName}} se ha ofrecido para ayudarlo con su solicitud. Se comunicarán con usted por teléfono para coordinar los detalles con usted. Si no tiene noticias suyas en unas pocas horas, puede contactarlos en {{helperPhone}}.",
+  "pairing-text-volunteer": "[Helping Hands] ¡Gracias por ofrecerte como voluntario para ayudar {{requesterName}}! Comuníquese con ellos lo antes posible en {{requesterPhone}} para coordinar cómo puede ayudar."
+}

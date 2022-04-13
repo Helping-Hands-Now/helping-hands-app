@@ -1,0 +1,71 @@
+{
+  "uber": {
+    "client_id": "XXX",
+    "client_secret": "XXX"
+  },
+  "checkr": {
+    "prod": "XXX",
+    "dev": "XXX"
+  },
+  "twilio": {
+    "sid": "XXX",
+    "authtoken": "XXX"
+  },
+  "features": {
+    "donate_button": "true"
+  },
+  "gcp": {
+    "project_id": "helping-hands-development"
+  },
+  "metrics": {
+    "enablereporting": "true"
+  },
+  "lyft": {
+    "refresh_token": "XXX",
+    "verification_token": "XXX",
+    "client_id": "XXX",
+    "batch_size": "3",
+    "client_secret": "XXX"
+  },
+  "sendgrid": {
+    "key": "XXX"
+  },
+  "stripe": {
+    "secretkey": "XXX",
+    "publishablekey": "XXX"
+  },
+  "doordash": {
+    "developer_id": "XXX",
+    "signing_secret": "XXX",
+    "key_id": "XXX",
+    "webhook_authorization_header": "XXX"
+  },
+  "facebook": {
+    "app_id": "XXX",
+    "page_access_token": "XXX",
+    "app_secret": "XXX",
+    "verify_token": "XXX"
+  },
+  "slackstatsbot": {
+    "url": "SLACK_WEBHOOK_XXX"
+  },
+  "bitly": {
+    "access_token": "XXX"
+  },
+  "axelhire": {
+    "staging_api_token": "XXX",
+    "api_token": "XXX"
+  },
+  "fieldopsbotwebhook": {
+    "url": "SLACK_WEBHOOK_XXX"
+  },
+  "backupbotwebhook": {
+    "url": "SLACK_WEBHOOK_XXX"
+  },
+  "etlbotwebhook": {
+    "url": "SLACK_WEBHOOK_XXX"
+  },
+  "googlegeocodeapi": {
+    "key": "XXX"
+  }
+}

@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+  height: 5em;
+}
+
+.footerWrapper {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.footerTop {
+  padding: 30px 0;
+}
+
+.footerBottom {
+  padding: 20px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .footerBottom {
+    justify-content: center;
+  }
+}
+
+.footerText {
+  display: inline;
+  font-size: 14px;
+  font-family: "AvenirRegular";
+}
+
+.footerTitle {
+  font-family: "AvenirRegular";
+}
+
+.footerLink {
+  color: #c4c4c4;
+  font-family: "AvenirRegular";
+  font-weight: 600;
+}
+
+.footerLink:hover {
+  color: #000000;
+}
+
+.socialMediaButton {
+  background-color: #f6f6f6 !important;
+}
+
+.socialButtonIcon {
+  color: #c4c4c4;
+}
+
+.socialMediaButton:hover .socialButtonIcon {
+  color: #000000;
+}
+
+.footerDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+}

@@ -1,0 +1,295 @@
+.eventDetailsSection {
+  padding: 10px;
+}
+
+.deliveryItem {
+  background: #ffffff;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkInText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  color: #575757;
+}
+
+.checkInSubtext {
+  text-align: center;
+}
+
+.communityEventCardContent {
+  margin: 18px;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.communityEventSignedUpOptionsContainer {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.communityEventTitle {
+  font-size: 14px;
+  font-family: "AvenirBold";
+  color: #00ba34;
+}
+
+.communityEventName {
+  font-family: "AvenirBold";
+  font-size: 27px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+.joinCommunityEventDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.communityEventTitleNew {
+  color: #4caf50;
+  font-size: 24px;
+  font-family: "AvenirBold";
+}
+
+.communityEventDescription {
+  font-size: 16px;
+  font-family: "AvenirRegular";
+}
+
+.communityEventSupplierInfo {
+  font-size: 16px;
+  line-height: 4px;
+  font-family: "AvenirBold";
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.checkedInTag {
+  color: #228b22 !important;
+  font-family: "AvenirBold";
+  line-height: 2px;
+}
+
+.iCanHelpCommunityBtn {
+  margin-right: 10px !important;
+}
+
+.notCheckedInTag {
+  color: #ff0000 !important;
+  font-family: "AvenirBold";
+  line-height: 2px;
+}
+
+.communityAcceptOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.externalLink {
+  color: #0081de;
+  font-size: 18px;
+  font-family: "AvenirRegular";
+}
+
+.progressBarOuter {
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  height: 12px;
+  width: 100%;
+}
+
+.progressBarInner {
+  background-color: #00ba34;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.volunteersNeededText {
+  font-size: 17px;
+  font-family: "AvenirRegular";
+  text-align: center;
+}
+
+.volunteersSignedUpContainer {
+  background-color: #00ba34;
+  border-radius: 100px;
+  padding: 10px;
+  padding-bottom: 6px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.numVolunteersSignedUpText {
+  font-family: "AvenirRegular";
+  color: white;
+  font-size: 17px;
+}
+
+.eventAccordionText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  color: #575757;
+}
+
+.readMoreInstructions {
+  font-size: 16px;
+  font-family: "AvenirBold";
+  color: #0081de;
+  text-align: center;
+}
+
+.editEventButton {
+  margin-bottom: 10px;
+}
+
+.checkInButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaveEventButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliveryItemNumber {
+  font-size: 18px;
+  font-family: "AvenirBold";
+  color: #00ba34;
+  margin-bottom: 2px;
+}
+
+.deliveryText {
+  font-size: 18px;
+  font-family: "AvenirRegular";
+  color: #575757;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.adminVolunteerContainer {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .communityEventSignedUpOptionsContainer {
+    justify-content: center;
+  }
+  .communityEventCardContent {
+    margin: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .deliveryFirstName {
+    font-weight: bold;
+  }
+  .eventAccordionText {
+    font-size: 16px;
+    font-family: "AvenirRegular";
+    color: #575757;
+  }
+  .checkInText {
+    font-size: 16px;
+    font-family: "AvenirRegular";
+    color: #575757;
+    text-align: center;
+  }
+  .eventDetailsSection {
+    padding: 0px;
+  }
+  .deliveryItemNumber {
+    font-size: 16px;
+  }
+  .deliveryText {
+    font-size: 16px;
+  }
+  .deliveryItem {
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.RichEditor-root {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.RichEditor-editor .RichEditor-blockquote {
+  border-left: 5px solid #eee;
+  color: #666;
+  font-family: "Hoefler Text", "Georgia", serif;
+  font-style: italic;
+  margin: 16px 0;
+  padding: 10px 20px;
+}
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.RichEditor-controls {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton {
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.RichEditor-activeButton {
+  color: #5890ff;
+}
